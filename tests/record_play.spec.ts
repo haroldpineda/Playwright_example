@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Test using playrecord playwright', async ({ page }) => {
   await page.goto('https://www.ebay.com/'); 
   await page.getByPlaceholder('Buscar artículos').fill('dark funeral vinyl');
   await page.keyboard.press('Enter')
